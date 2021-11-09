@@ -35,7 +35,7 @@ class DisplayListViewModel: DisplayListViewModelPortocol {
             guard let self = self else { return }
             switch result {
             case .success(let photoDtos):
-                self.items = photoDtos.compactMap { $0.toPhoto }
+                self.items = photoDtos.compactMap { $0.toPhoto }.sorted()
                 self.delegate?.didLoadData()
             case .failure(_) :
                 self.delegate?.displayError(.loadListFailed)

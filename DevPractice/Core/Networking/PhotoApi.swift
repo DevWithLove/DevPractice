@@ -30,11 +30,7 @@ enum PhotoApi {
             return .post
         }
     }
-    
-    private var contentType: String {
-        return "application/json"
-    }
-    
+
     func request(withBody body: Data? = nil) throws -> URLRequest {
         guard let url = URL(string: urlString) else {
             throw ApiError.urlError("invalid url: \(urlString)")
@@ -42,7 +38,7 @@ enum PhotoApi {
         
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
-        request.addValue(contentType, forHTTPHeaderField: "Content-type")
+        request.addValue("application/json", forHTTPHeaderField: "Content-type")
         request.httpBody = body
         return request
     }
@@ -70,7 +66,7 @@ extension HTTPURLResponse {
     static let successResponseCodeRange = 200..<299
     
     var isValidResponse: Bool {
-        return HTTPURLResponse.successResponseCodeRange ~= statusCode
+        return 200..<299 ~= statusCode
     }
 }
 

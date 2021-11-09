@@ -30,6 +30,11 @@
 		02643C9D2738C2D000E2ABFD /* PhotoListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02643C9C2738C2D000E2ABFD /* PhotoListViewModelTests.swift */; };
 		02643C9F2738E82200E2ABFD /* PhotoDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02643C9E2738E82200E2ABFD /* PhotoDto.swift */; };
 		02643CA12738E86600E2ABFD /* PhotoApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02643CA02738E86600E2ABFD /* PhotoApi.swift */; };
+		02E0DB4F2739DE4000A2EE00 /* PhotoDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02643C9E2738E82200E2ABFD /* PhotoDto.swift */; };
+		02E0DB502739DE5D00A2EE00 /* PhotoApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02643CA02738E86600E2ABFD /* PhotoApi.swift */; };
+		02E0DB522739F57400A2EE00 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0DB512739F57400A2EE00 /* ArrayExtensions.swift */; };
+		02E0DB532739F57400A2EE00 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0DB512739F57400A2EE00 /* ArrayExtensions.swift */; };
+		02E0DB552739F84D00A2EE00 /* ArraySortingTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0DB542739F84D00A2EE00 /* ArraySortingTesting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +77,8 @@
 		02643C9C2738C2D000E2ABFD /* PhotoListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewModelTests.swift; sourceTree = "<group>"; };
 		02643C9E2738E82200E2ABFD /* PhotoDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDto.swift; sourceTree = "<group>"; };
 		02643CA02738E86600E2ABFD /* PhotoApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoApi.swift; sourceTree = "<group>"; };
+		02E0DB512739F57400A2EE00 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		02E0DB542739F84D00A2EE00 /* ArraySortingTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraySortingTesting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +147,7 @@
 			children = (
 				02643C612738A25C00E2ABFD /* Info.plist */,
 				02643C9C2738C2D000E2ABFD /* PhotoListViewModelTests.swift */,
+				02E0DB542739F84D00A2EE00 /* ArraySortingTesting.swift */,
 			);
 			path = DevPracticeTests;
 			sourceTree = "<group>";
@@ -204,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				02643C992738B91300E2ABFD /* TableViewCellExtensions.swift */,
+				02E0DB512739F57400A2EE00 /* ArrayExtensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -367,6 +376,7 @@
 				02643C4B2738A25900E2ABFD /* SceneDelegate.swift in Sources */,
 				02643C9A2738B91300E2ABFD /* TableViewCellExtensions.swift in Sources */,
 				02643C972738B39F00E2ABFD /* PhotoTableViewCell.swift in Sources */,
+				02E0DB522739F57400A2EE00 /* ArrayExtensions.swift in Sources */,
 				02643C832738A59600E2ABFD /* DisplayListViewModel.swift in Sources */,
 				02643CA12738E86600E2ABFD /* PhotoApi.swift in Sources */,
 				02643C9F2738E82200E2ABFD /* PhotoDto.swift in Sources */,
@@ -379,10 +389,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				02643C982738B39F00E2ABFD /* PhotoTableViewCell.swift in Sources */,
+				02E0DB532739F57400A2EE00 /* ArrayExtensions.swift in Sources */,
 				02643C9B2738B91300E2ABFD /* TableViewCellExtensions.swift in Sources */,
+				02E0DB4F2739DE4000A2EE00 /* PhotoDto.swift in Sources */,
 				02643C8A2738A79900E2ABFD /* Photo.swift in Sources */,
 				02643C872738A5DA00E2ABFD /* ListError.swift in Sources */,
 				02643C842738A59600E2ABFD /* DisplayListViewModel.swift in Sources */,
+				02E0DB502739DE5D00A2EE00 /* PhotoApi.swift in Sources */,
+				02E0DB552739F84D00A2EE00 /* ArraySortingTesting.swift in Sources */,
 				02643C8E2738A8E900E2ABFD /* PhotoWebService.swift in Sources */,
 				02643C9D2738C2D000E2ABFD /* PhotoListViewModelTests.swift in Sources */,
 			);

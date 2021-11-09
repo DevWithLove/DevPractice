@@ -7,32 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DE569408-FFB9-41FD-BF1F-38A99557D6AC"
-            shouldBeEnabled = "Yes"
+            uuid = "CF1FAAC6-1A03-4C06-B18E-8344EC039C8D"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DevPractice/Features/DisplayList/DisplayListViewModel.swift"
+            filePath = "DevPracticeTests/ArraySortingTesting.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "loadList()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "49800FCE-87BA-4EEF-B9D1-5F7730782C43"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DevPractice/Features/DisplayList/DisplayListViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "loadList()"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "testSelectionSorting()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

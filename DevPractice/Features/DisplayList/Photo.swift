@@ -12,3 +12,13 @@ struct Photo: Identifiable {
     let name: String
     let description: String
 }
+
+extension Photo: Comparable {
+    static func < (lhs: Photo, rhs: Photo) -> Bool {
+        lhs.name < rhs.name
+    }
+    
+    static func == (lhs: Photo, rhs: Photo) -> Bool {
+        return lhs.id == rhs.id
+    }
+}

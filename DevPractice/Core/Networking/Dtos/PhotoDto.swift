@@ -12,5 +12,3 @@ struct PhotoDto: Decodable {
     let author: String?
     let url: String?
 }
-
-

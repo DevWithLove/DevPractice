@@ -20,8 +20,9 @@ class PhotoListViewModelTests: XCTestCase {
     func testLoadDataSuccess() throws {
         
         // Arrange
-        let mockWebService = MockWebServcie(expectedResult: .success([Photo(id: UUID(), name: "TestPhoto1", description: "Test photo1 description"),
-                                                                      Photo(id: UUID(), name: "TestPhoto2", description: "Test photo2 description")]))
+        let mockWebService = MockWebServcie(expectedResult: .success([PhotoDto(id: "1", author: "AestPhoto1", url: "Test photo1 description"),
+                                                                      PhotoDto(id: "2", author: "BestPhoto2", url: "Test photo2 description"),
+                                                                      PhotoDto(id: "3", author: "AestPhoto2", url: "Test photo2 description")]))
         let view = MockListViewController(testExpection: testExpectation!)
         let viewModel = DisplayListViewModel(photoWebService: mockWebService)
         viewModel.delegate = view
@@ -33,9 +34,9 @@ class PhotoListViewModelTests: XCTestCase {
         waitForExpectations(timeout: timeout, handler: nil)
         XCTAssertTrue(view.isDataLoaded)
         XCTAssertNil(view.errorMessage)
-        XCTAssertEqual(viewModel.items.first!.name, "TestPhoto1")
-        XCTAssertEqual(viewModel.items.last!.name, "TestPhoto2")
- 
+        XCTAssertEqual(viewModel.items[0].name, "AestPhoto1")
+        XCTAssertEqual(viewModel.items[1].name, "AestPhoto2")
+        XCTAssertEqual(viewModel.items[2].name, "BestPhoto2")
     }
     
     func testLoadDataFailed() throws {
@@ -58,7 +59,7 @@ class PhotoListViewModelTests: XCTestCase {
 }
 
 class MockWebServcie: PhotoWebServiceProtocol {
-    typealias PhotoServicesMockResult = Result<[Photo], ApiError>
+    typealias PhotoServicesMockResult = Result<[PhotoDto], ApiError>
     private let expectedResult: PhotoServicesMockResult
     
     init(expectedResult: PhotoServicesMockResult) {
