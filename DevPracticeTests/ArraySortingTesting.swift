@@ -91,9 +91,9 @@ class ArraySortingTesting: XCTestCase {
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
-        let array = Array.generateUniqueRandomNumber(size: 1000)
+        let array = Array.generateUniqueRandomNumber(size: 10000)
         self.measure {
-            _ = array.quickSort()
+            _ = array.quickSort2()
         }
     }
 }

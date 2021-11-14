@@ -35,6 +35,9 @@
 		02E0DB522739F57400A2EE00 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0DB512739F57400A2EE00 /* ArrayExtensions.swift */; };
 		02E0DB532739F57400A2EE00 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0DB512739F57400A2EE00 /* ArrayExtensions.swift */; };
 		02E0DB552739F84D00A2EE00 /* ArraySortingTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0DB542739F84D00A2EE00 /* ArraySortingTesting.swift */; };
+		02E0DB57273B19A800A2EE00 /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0DB56273B19A800A2EE00 /* DateFormatterExtensions.swift */; };
+		02E0DB59273B234E00A2EE00 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0DB58273B234E00A2EE00 /* DateTests.swift */; };
+		02E0DB5A273B238F00A2EE00 /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E0DB56273B19A800A2EE00 /* DateFormatterExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +82,8 @@
 		02643CA02738E86600E2ABFD /* PhotoApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoApi.swift; sourceTree = "<group>"; };
 		02E0DB512739F57400A2EE00 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		02E0DB542739F84D00A2EE00 /* ArraySortingTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraySortingTesting.swift; sourceTree = "<group>"; };
+		02E0DB56273B19A800A2EE00 /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
+		02E0DB58273B234E00A2EE00 /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +153,7 @@
 				02643C612738A25C00E2ABFD /* Info.plist */,
 				02643C9C2738C2D000E2ABFD /* PhotoListViewModelTests.swift */,
 				02E0DB542739F84D00A2EE00 /* ArraySortingTesting.swift */,
+				02E0DB58273B234E00A2EE00 /* DateTests.swift */,
 			);
 			path = DevPracticeTests;
 			sourceTree = "<group>";
@@ -213,6 +219,7 @@
 			children = (
 				02643C992738B91300E2ABFD /* TableViewCellExtensions.swift */,
 				02E0DB512739F57400A2EE00 /* ArrayExtensions.swift */,
+				02E0DB56273B19A800A2EE00 /* DateFormatterExtensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -374,6 +381,7 @@
 				02643C492738A25900E2ABFD /* AppDelegate.swift in Sources */,
 				02643C8D2738A8E900E2ABFD /* PhotoWebService.swift in Sources */,
 				02643C4B2738A25900E2ABFD /* SceneDelegate.swift in Sources */,
+				02E0DB57273B19A800A2EE00 /* DateFormatterExtensions.swift in Sources */,
 				02643C9A2738B91300E2ABFD /* TableViewCellExtensions.swift in Sources */,
 				02643C972738B39F00E2ABFD /* PhotoTableViewCell.swift in Sources */,
 				02E0DB522739F57400A2EE00 /* ArrayExtensions.swift in Sources */,
@@ -394,7 +402,9 @@
 				02E0DB4F2739DE4000A2EE00 /* PhotoDto.swift in Sources */,
 				02643C8A2738A79900E2ABFD /* Photo.swift in Sources */,
 				02643C872738A5DA00E2ABFD /* ListError.swift in Sources */,
+				02E0DB5A273B238F00A2EE00 /* DateFormatterExtensions.swift in Sources */,
 				02643C842738A59600E2ABFD /* DisplayListViewModel.swift in Sources */,
+				02E0DB59273B234E00A2EE00 /* DateTests.swift in Sources */,
 				02E0DB502739DE5D00A2EE00 /* PhotoApi.swift in Sources */,
 				02E0DB552739F84D00A2EE00 /* ArraySortingTesting.swift in Sources */,
 				02643C8E2738A8E900E2ABFD /* PhotoWebService.swift in Sources */,
