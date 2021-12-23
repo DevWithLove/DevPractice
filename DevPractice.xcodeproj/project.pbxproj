@@ -58,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		023246F6274F16F600313E2C /* Docs.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Docs.md; sourceTree = "<group>"; };
 		02643C452738A25900E2ABFD /* DevPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02643C482738A25900E2ABFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02643C4A2738A25900E2ABFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +113,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		023246F5274F16B600313E2C /* Concurrency */ = {
+			isa = PBXGroup;
+			children = (
+				023246F6274F16F600313E2C /* Docs.md */,
+			);
+			path = Concurrency;
+			sourceTree = "<group>";
+		};
 		02643C3C2738A25800E2ABFD = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +191,7 @@
 		02643C7D2738A50B00E2ABFD /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				023246F5274F16B600313E2C /* Concurrency */,
 				02643C792738A29B00E2ABFD /* DisplayList */,
 			);
 			path = Features;

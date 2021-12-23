@@ -44,4 +44,28 @@ class DateTests: XCTestCase {
         XCTAssertEqual(date, expectedDate)
     }
 
+    func testReferenceType() throws {
+        let personA = Person(name: "A")
+        let personB = personA
+        personB.name = "B"
+        print(personA.name)
+        print(personB.name)
+        
+        
+        updatePerson(person: personB)
+        
+        print(personA.name)
+        print(personB.name)
+    }
+    
+    func updatePerson(person: Person) {
+        person.name = "updated name"
+    }
+}
+
+class Person {
+    var name: String
+    init(name: String) {
+        self.name = name
+    }
 }
